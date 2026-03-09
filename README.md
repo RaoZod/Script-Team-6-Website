@@ -1,34 +1,25 @@
-# Script-Team-6-Website
-Script Team 6 × Casino Entertainment — Brand-to-screen studio helping companies turn brand IP into films, TV, and branded entertainment that drives audience growth and sales.
-# Script Team 6 × Casino Entertainment
+# Script Team 6 Website
 
-Brand-to-screen studio for enterprise and corporate brands.
+Enterprise-facing brand entertainment website for Script Team 6.
 
-We help companies turn brand IP into films, TV shows, and branded entertainment — moving beyond one-off ads into long-term audience engagement and revenue-driving media ecosystems.
-
-## What this repo contains
-
-A lightweight static marketing website:
+## Files
 
 - `index.html` — page structure and content
-- `styles.css` — visual design and responsive layout
-- `script.js` — mobile nav toggle, form confirmation message, dynamic footer year
+- `styles.css` — full visual styling + responsive layout
+- `script.js` — menu toggle, form submission handler, carousel, and reveal animations
+- `.github/workflows/deploy-pages.yml` — GitHub Pages auto-deploy workflow
 
-## Core positioning
+## Contact Form
 
-- **Script Team 6** = strategy + development + brand narrative architecture
-- **Casino Entertainment** = production banner for execution from pre-pro through post
+The site contact form is configured to submit to:
 
-## Services highlighted on site
+- `https://formsubmit.co/ajax/cameroncasio501@gmail.com`
 
-- Brand IP Development
-- Film & Series Packaging
-- Casino Entertainment Production
-- Distribution & Monetization Strategy
+And includes a direct Calendly booking fallback.
 
-## Run locally
+## Local Preview
 
-Just open `index.html` in your browser, or run a local server if preferred:
+Open `index.html` directly or run:
 
 ```bash
 python3 -m http.server 4173
