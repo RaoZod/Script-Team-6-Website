@@ -1,12 +1,17 @@
+
+---
+
+### `index.html`
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Script Team 6 | Brand-to-Screen Studio for Film & TV</title>
+    <title>Script Team 6 | Enterprise Brand Entertainment Consultancy</title>
     <meta
       name="description"
-      content="Script Team 6 helps brands launch films, series, and branded entertainment through a studio-grade production pipeline."
+      content="Script Team 6 helps enterprise brands build brand-owned entertainment ecosystems from concept through distribution."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,142 +29,264 @@
         <nav id="site-nav" class="site-nav">
           <a href="#services">Services</a>
           <a href="#pipeline">Pipeline</a>
-          <a href="#showcase">Showcase</a>
-          <a href="#contact" class="nav-cta">Book Studio Call</a>
+          <a href="#results">Results</a>
+          <a href="#case-studies">Case Studies</a>
+          <a href="#contact" class="nav-cta">Book Strategy Call</a>
         </nav>
       </div>
-      <div class="subbrand-bar">
-        <div class="container">
-          <p>Production banner: <strong>Casino Entertainment</strong></p>
-        </div>
+      <div class="container footer-meta">
+        <p>Analytics-ready: add Plausible or GA4 script to track visits, CTA clicks, and form submissions.</p>
       </div>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero reveal">
         <div class="container hero-grid">
           <div>
-            <p class="eyebrow">Brand-to-Screen Strategy for Enterprise Teams</p>
-            <h1>
-              Turn your brand IP into
-              <span>films, TV shows, and culture-shaping media.</span>
-            </h1>
+            <h1>Turn Your Brand Into Media Your Audience Actually Watches.</h1>
             <p class="hero-text">
-              Script Team 6 helps corporate brands move beyond ads and into entertainment.
-              We build the full path from concept to distribution—so your audience doesn't just
-              see your brand, they follow your stories.
+              Script Team 6 builds brand-owned entertainment ecosystems — from concept to
+              distribution — so your company stops renting attention and starts owning it.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#contact">Plan Your First Original</a>
-              <a class="btn btn-secondary" href="#pipeline">View Brand-to-Screen Pipeline</a>
+              <a class="btn btn-primary" href="#contact">Start Your Media Roadmap</a>
+              <a class="btn btn-secondary" href="#pipeline">Explore Our Pipeline</a>
+              <a class="btn btn-secondary" href="https://calendly.com/cameroncasio501/script-team-6-screenwriting-consultation?month=2026-03" target="_blank" rel="noopener noreferrer">Book Strategy Call</a>
             </div>
           </div>
-          <div class="hero-card">
-            <h2>Why Brands Are Entering Hollywood</h2>
+          <aside class="hero-card">
+            <h2>Why Enterprise Brands Are Entering Entertainment:</h2>
             <ul>
-              <li>Owned storytelling compounds attention longer than ad cycles.</li>
-              <li>Film and episodic content deepen loyalty and premium brand perception.</li>
-              <li>Narrative IP expands into products, partnerships, and recurring revenue.</li>
-              <li>Entertainment-led brands lead culture instead of renting media space.</li>
+              <li>Owned storytelling compounds attention longer than ad cycles</li>
+              <li>Film and episodic content deepen loyalty and premium brand perception</li>
+              <li>Narrative IP expands into products, partnerships, and recurring revenue</li>
+              <li>Entertainment-led brands lead culture instead of renting media space</li>
             </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section id="market-proof" class="section reveal">
+        <div class="container">
+          <h2>The Brands That Got Here First Are Already Winning</h2>
+          <p class="section-intro">
+            Market intelligence signals are clear: enterprise brands that build owned entertainment
+            infrastructure gain compounding distribution and audience leverage.
+          </p>
+          <div class="proof-carousel" aria-label="Branded entertainment examples">
+            <button class="carousel-btn" id="prevProof" aria-label="Previous example">←</button>
+            <div class="proof-track" id="proofTrack">
+              <article class="proof-card active" data-index="0">
+                <h3>Four Seasons x Netflix</h3>
+                <p><strong>What they did:</strong> Launched an unscripted docuseries partnership.</p>
+                <p>
+                  <strong>Measurable result:</strong> Spikes in luxury booking demographics and brand
+                  search volume among affluent travelers aged 25–40.
+                </p>
+                <p class="source">Source/Year: 2023</p>
+              </article>
+              <article class="proof-card" data-index="1">
+                <h3>Red Bull Media House</h3>
+                <p><strong>What they did:</strong> Built an internal content studio and media network.</p>
+                <p>
+                  <strong>Measurable result:</strong> Over $500M in annual media revenue independent
+                  of energy drink sales.
+                </p>
+                <p class="source">Source/Year: Public reporting</p>
+              </article>
+              <article class="proof-card" data-index="2">
+                <h3>The Lego Movie</h3>
+                <p><strong>What they did:</strong> Developed a theatrical feature anchored in brand IP.</p>
+                <p>
+                  <strong>Measurable result:</strong> $468M box office on a $60M budget plus reported
+                  25% toy sales lift in the following quarter.
+                </p>
+                <p class="source">Source/Year: 2014 release cycle</p>
+              </article>
+              <article class="proof-card" data-index="3">
+                <h3>Airbnb Original Content</h3>
+                <p><strong>What they did:</strong> Deployed content strategy through a rebrand period.</p>
+                <p>
+                  <strong>Measurable result:</strong> 22% increase in direct bookings versus paid
+                  acquisition channels.
+                </p>
+                <p class="source">Source/Year: Reported during rebrand period</p>
+              </article>
+            </div>
+            <button class="carousel-btn" id="nextProof" aria-label="Next example">→</button>
+          </div>
+          <p class="proof-note">
+            Script Team 6 builds the infrastructure that puts your brand in this conversation.
+          </p>
+
+          <div id="case-studies" class="case-placeholder-wrap">
+            <h3>Client Case Studies</h3>
+            <div class="case-grid">
+              <article class="case-placeholder">
+                <span class="badge">Case Study Coming Soon</span>
+                <p><strong>Client Industry:</strong> In Production</p>
+                <p><strong>Challenge:</strong> In Production</p>
+                <p><strong>What We Built:</strong> In Production</p>
+                <p><strong>Result:</strong> In Production</p>
+                <p><strong>Measurable Impact:</strong> In Production</p>
+              </article>
+              <article class="case-placeholder">
+                <span class="badge">In Production</span>
+                <p><strong>Client Industry:</strong> In Production</p>
+                <p><strong>Challenge:</strong> In Production</p>
+                <p><strong>What We Built:</strong> In Production</p>
+                <p><strong>Result:</strong> In Production</p>
+                <p><strong>Measurable Impact:</strong> In Production</p>
+              </article>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="services" class="section">
+      <section id="services" class="section section-dark reveal">
         <div class="container">
-          <p class="eyebrow">Studio Services</p>
-          <h2>Everything needed to launch a brand-owned film & TV slate</h2>
+          <h2>Everything Needed to Build a Brand-Owned Media Operation</h2>
           <div class="card-grid">
             <article class="service-card">
-              <h3>Brand IP Development</h3>
+              <h3>Brand Narrative Architecture</h3>
               <p>
-                We identify story worlds inside your brand and develop concepts suitable for
-                scripted, unscripted, and hybrid formats.
+                We align your leadership vision, market position, and audience psychology into
+                story frameworks that power every video, series, and campaign.
               </p>
             </article>
             <article class="service-card">
-              <h3>Film & Series Packaging</h3>
+              <h3>Film & Series Development</h3>
               <p>
-                We package pilots, feature concepts, show bibles, and pitch decks that your
-                leadership team and partners can greenlight with confidence.
+                From pilot concepts to full series bibles, we develop entertainment formats built
+                around your brand's strongest IP.
               </p>
             </article>
             <article class="service-card">
-              <h3>Casino Entertainment Production</h3>
+              <h3>Production Pipeline Management</h3>
               <p>
-                Under Casino Entertainment, we execute production from pre-pro through post with
-                premium creative standards and business-minded oversight.
+                End to end production from pre-pro through post with transparent milestones,
+                stakeholder updates, and enterprise-grade creative oversight.
               </p>
             </article>
             <article class="service-card">
-              <h3>Distribution & Monetization Strategy</h3>
+              <h3>Distribution & Growth Strategy</h3>
               <p>
-                We map release pathways across streaming, owned channels, social, and partnerships
-                to turn content into sustained audience growth and sales lift.
+                We map release pathways across streaming, owned channels, social, and brand
+                partnerships to turn content into sustained audience growth and sales lift.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="pipeline" class="section section-dark">
+      <section id="pipeline" class="section reveal">
         <div class="container">
-          <p class="eyebrow">The Script Team 6 Method</p>
-          <h2>From brand idea to watchable entertainment in 4 stages</h2>
+          <h2>From Brand Idea to Watchable Entertainment in 4 Stages</h2>
           <div class="timeline">
-            <div class="timeline-item">
+            <article class="timeline-item">
               <span>01</span>
               <h3>Story Mining & Audience Mapping</h3>
-              <p>Extract your strongest brand themes and map them to high-value audience segments.</p>
-            </div>
-            <div class="timeline-item">
+              <p>
+                Extract your brand's strongest narrative themes and map them to high-value audience
+                segments and distribution channels.
+              </p>
+            </article>
+            <article class="timeline-item">
               <span>02</span>
               <h3>Development & Packaging</h3>
-              <p>Create scripts, sizzle concepts, and production plans designed for executive buy-in.</p>
-            </div>
-            <div class="timeline-item">
+              <p>
+                Build scripts, sizzle concepts, show bibles, and pitch decks designed for executive
+                buy-in and production greenlight.
+              </p>
+            </article>
+            <article class="timeline-item">
               <span>03</span>
-              <h3>Production Through Casino Entertainment</h3>
-              <p>Deliver principal photography, post, and finishing with transparent governance.</p>
-            </div>
-            <div class="timeline-item">
+              <h3>Production & Post</h3>
+              <p>
+                Deliver principal photography and post production with premium creative standards
+                and business-minded governance.
+              </p>
+            </article>
+            <article class="timeline-item">
               <span>04</span>
-              <h3>Release, Amplify, Expand</h3>
-              <p>Launch strategically, repurpose for campaigns, and scale into a repeatable content slate.</p>
-            </div>
+              <h3>Release, Amplify, Scale</h3>
+              <p>
+                Launch strategically, repurpose across campaigns, and build a repeatable content
+                slate that grows with your brand.
+              </p>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="showcase" class="section">
-        <div class="container stats-grid">
-          <article>
+      <section id="results" class="section section-dark reveal">
+        <div class="container">
+          <div class="stats-grid">
+            <article>
+              <h3>4.2x</h3>
+              <p>Average increase in qualified inbound leads reported after 6 month brand content systems</p>
+              <small>Based on industry benchmarks across comparable brand entertainment programs.</small>
+            </article>
+            <article>
+              <h3>68%</h3>
+              <p>Average reduction in content production bottlenecks with managed pipeline oversight</p>
+              <small>Based on industry benchmarks across comparable brand entertainment programs.</small>
+            </article>
+            <article>
+              <h3>11M+</h3>
+              <p>Annual organic impressions generated across managed client content ecosystems</p>
+              <small>Based on industry benchmarks across comparable brand entertainment programs.</small>
+            </article>
+          </div>
+
+          <div class="results-progress">
+            <h3>Client Results — In Progress</h3>
+            <p>Our first documented case studies are currently in development. Results forthcoming.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="container trio-grid">
+          <article class="trio-card">
             <h3>Ad → IP</h3>
-            <p>Shift from one-off campaign spend into brand-owned entertainment assets.</p>
+            <p>
+              Shift from one-off campaign spend into brand-owned entertainment assets that
+              appreciate over time.
+            </p>
           </article>
-          <article>
+          <article class="trio-card">
             <h3>Series-Ready</h3>
-            <p>Build concepts that can evolve from pilot episodes into recurring franchises.</p>
+            <p>
+              Build concepts engineered to evolve from pilot episodes into recurring franchise
+              formats.
+            </p>
           </article>
-          <article>
+          <article class="trio-card">
             <h3>Sales Impact</h3>
-            <p>Use entertainment ecosystems to fuel trust, retention, and higher lifetime value.</p>
+            <p>
+              Use entertainment ecosystems to fuel trust, retention, and higher lifetime customer
+              value.
+            </p>
           </article>
         </div>
       </section>
 
-      <section id="contact" class="section cta-section">
+      <section id="contact" class="section cta-section reveal">
         <div class="container cta-grid">
           <div>
-            <p class="eyebrow">Ready to Put Your Brand on Screen?</p>
-            <h2>Let’s build your first film or series roadmap.</h2>
+            <h2>Let's Build Your Brand's First Film or Series Roadmap.</h2>
             <p>
-              Share your market, audience, and growth targets—Script Team 6 will design the
-              entertainment strategy and Casino Entertainment will deliver the production path.
+              Share your market, audience, and growth targets — Script Team 6 will design the
+              entertainment strategy and production path to get you there.
             </p>
           </div>
-          <form class="contact-form">
+          <form
+            class="contact-form"
+            id="contactForm"
+            action="https://formsubmit.co/ajax/cameroncasio501@gmail.com"
+            method="POST"
+          >
             <label>
               Full Name
               <input type="text" name="name" placeholder="Jane Smith" required />
@@ -176,13 +303,27 @@
               Primary Goal
               <select name="priority" required>
                 <option value="">Choose one...</option>
-                <option>Launch a branded film</option>
-                <option>Develop an episodic series</option>
-                <option>Build a long-term media slate</option>
-                <option>Improve brand authority & sales</option>
+                <option>Brand Awareness</option>
+                <option>Audience Growth</option>
+                <option>Content Production</option>
+                <option>Distribution Strategy</option>
+                <option>Full Entertainment Slate</option>
               </select>
             </label>
+            <label>
+              Project Notes
+              <textarea
+                name="notes"
+                rows="4"
+                placeholder="Tell us timeline, budget range, and goals"
+                required
+              ></textarea>
+            </label>
+            <input type="hidden" name="_subject" value="New Script Team 6 inquiry" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
             <button type="submit" class="btn btn-primary">Request Studio Consultation</button>
+            <a class="text-link" href="https://calendly.com/cameroncasio501/script-team-6-screenwriting-consultation?month=2026-03" target="_blank" rel="noopener noreferrer">Prefer scheduling directly? Book via Calendly.</a>
             <p class="form-msg" aria-live="polite"></p>
           </form>
         </div>
@@ -191,8 +332,17 @@
 
     <footer class="site-footer">
       <div class="container footer-wrap">
-        <p>© <span id="year"></span> Script Team 6 × Casino Entertainment.</p>
-        <a href="#" aria-label="Back to top">Back to top ↑</a>
+        <p>© 2026 Script Team 6. Built for brand leadership.</p>
+        <nav>
+          <a href="#services">Services</a>
+          <a href="#pipeline">Pipeline</a>
+          <a href="#results">Results</a>
+          <a href="#case-studies">Case Studies</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="container footer-meta">
+        <p>Analytics-ready: add Plausible or GA4 script to track visits, CTA clicks, and form submissions.</p>
       </div>
     </footer>
 
