@@ -29,6 +29,7 @@ html, body {
 .nav-wrap { display:flex; align-items:center; justify-content:space-between; padding:1rem 0; }
 .logo { color:#fff; text-decoration:none; font-weight:800; }
 .logo span { color: var(--cyan); }
+.logo-mark { width: 34px; height: 34px; object-fit: cover; border-radius: 50%; margin-right: .45rem; vertical-align: middle; border: 1px solid #3a4a70; }
 .site-nav { display:flex; gap:1.1rem; align-items:center; }
 .site-nav a { color:#d8e2f6; text-decoration:none; font-weight:600; font-size:.95rem; }
 .nav-cta { border:1px solid var(--cyan); padding:.52rem .85rem; border-radius:999px; }
@@ -71,7 +72,7 @@ h1 { font-size:clamp(2rem, 4.5vw, 3.35rem); margin:0 0 1rem; line-height:1.1; }
   border:1px solid var(--border); color:#d9e4ff; background:#0f1528;
   border-radius:12px; width:46px; cursor:pointer; font-size:1.1rem;
 }
-.proof-track { position:relative; min-height: 230px; }
+ .proof-track { position:relative; min-height: 360px; }
 .proof-card {
   position:absolute; inset:0;
   opacity:0; transform:translateX(16px);
@@ -80,6 +81,7 @@ h1 { font-size:clamp(2rem, 4.5vw, 3.35rem); margin:0 0 1rem; line-height:1.1; }
   pointer-events:none;
 }
 .proof-card.active { opacity:1; transform:translateX(0); pointer-events:auto; }
+.proof-image { width: 100%; height: 150px; object-fit: cover; border-radius: 12px; margin-bottom: .75rem; border: 1px solid #33405c; }
 .proof-card h3 { margin:.1rem 0 .8rem; color: var(--cyan); }
 .proof-card p { margin:.45rem 0; color: var(--muted); }
 .source { color:#8db9ff; font-size:.9rem; }
@@ -165,6 +167,6 @@ textarea {
     display:inline-flex; background:transparent; color:#fff;
     border:1px solid #3c4a68; border-radius:999px; padding:.45rem .8rem;
   }
-  .proof-track { min-height:280px; }
+  .proof-track { min-height:420px; }
   .footer-wrap { flex-direction:column; align-items:flex-start; }
 }
