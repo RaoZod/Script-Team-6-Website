@@ -141,10 +141,27 @@ textarea {
   font-size: .92rem;
 }
 
+text-link {
+  color: #97dfff;
+  font-size: .92rem;
+}
+
+.text-link {
+  color: #97dfff;
+  font-size: .92rem;
+}
+
 .response-time {
   margin: .15rem 0 .35rem;
   color: #b8c9ea;
   font-size: .86rem;
+}
+
+.site-version {
+  margin-top: .2rem !important;
+  color: #6f84b3 !important;
+  font-size: .78rem;
+  letter-spacing: .04em;
 }
 
 .footer-meta p {
