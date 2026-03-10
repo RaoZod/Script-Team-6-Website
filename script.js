@@ -34,7 +34,7 @@ if (form && msg) {
         throw new Error('Submission failed');
       }
 
-      msg.textContent = 'Thanks — we received your details and sent them to cameroncasio501@gmail.com.';
+      msg.textContent = 'Thanks — we received your details. Our team will contact you shortly.';
       form.reset();
     } catch (error) {
       msg.textContent = 'Something went wrong submitting the form. Please use the Calendly link below.';
