@@ -1,25 +1,21 @@
-# Script Team 6 Website
+# Script Team 6 — Brand Entertainment Studio Website
 
-Enterprise-facing brand entertainment website for Script Team 6.
+This repository hosts the static marketing site for Script Team 6.
 
-## Files
+## Included files
 
-- `index.html` — page structure and content
-- `styles.css` — full visual styling + responsive layout
-- `script.js` — menu toggle, form submission handler, carousel, and reveal animations
-- `.github/workflows/deploy-pages.yml` — GitHub Pages auto-deploy workflow
+- `index.html` — page structure and copy
+- `styles.css` — visual design, layout, and responsive styles
+- `script.js` — interactions (menu toggle, carousel, form submit UX, reveal animations)
+- `.github/workflows/deploy-pages.yml` — GitHub Pages deployment workflow
 
-## Contact Form
+## Form behavior
 
-The site contact form is configured to submit to:
+The contact form submits via AJAX to FormSubmit and uses a Calendly fallback link for direct booking.
 
-- `https://formsubmit.co/ajax/cameroncasio501@gmail.com`
+## Local preview
 
-And includes a direct Calendly booking fallback.
-
-## Local Preview
-
-Open `index.html` directly or run:
+Open `index.html` directly in your browser, or run:
 
 ```bash
 python3 -m http.server 4173
