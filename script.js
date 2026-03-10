@@ -45,12 +45,21 @@ if (form && msg) {
 const proofCards = Array.from(document.querySelectorAll('.proof-card'));
 const prevProof = document.getElementById('prevProof');
 const nextProof = document.getElementById('nextProof');
+const proofTrack = document.getElementById('proofTrack');
 let activeProof = 0;
+
+function syncProofTrackHeight() {
+  if (!proofTrack || !proofCards.length) return;
+  const activeCard = proofCards[activeProof];
+  if (!activeCard) return;
+  proofTrack.style.height = `${activeCard.scrollHeight}px`;
+}
 
 function showProof(index) {
   proofCards.forEach((card, idx) => {
     card.classList.toggle('active', idx === index);
   });
+  syncProofTrackHeight();
 }
 
 if (proofCards.length && prevProof && nextProof) {
@@ -65,13 +74,12 @@ if (proofCards.length && prevProof && nextProof) {
   });
 
   let startX = 0;
-  const track = document.getElementById('proofTrack');
-  if (track) {
-    track.addEventListener('touchstart', (event) => {
+  if (proofTrack) {
+    proofTrack.addEventListener('touchstart', (event) => {
       startX = event.changedTouches[0].clientX;
     });
 
-    track.addEventListener('touchend', (event) => {
+    proofTrack.addEventListener('touchend', (event) => {
       const endX = event.changedTouches[0].clientX;
       const delta = endX - startX;
       if (Math.abs(delta) < 40) return;
@@ -83,6 +91,9 @@ if (proofCards.length && prevProof && nextProof) {
       showProof(activeProof);
     });
   }
+
+  syncProofTrackHeight();
+  window.addEventListener('resize', syncProofTrackHeight);
 }
 
 const revealNodes = document.querySelectorAll('.reveal');
